@@ -1,7 +1,7 @@
 {
-  "type": "minecraft:block",
   "pools": [
     {
+      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
@@ -9,44 +9,41 @@
           "children": [
             {
               "type": "minecraft:item",
+              "name": "tutorialmod:bismuth_ore",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
                   "predicate": {
-                    "predicates": {
-                      "minecraft:enchantments": [
-                        {
-                          "enchantments": "minecraft:silk_touch",
-                          "levels": {
-                            "min": 1
-                          }
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
                         }
-                      ]
-                    }
+                      }
+                    ]
                   }
                 }
-              ],
-              "name": "tutorialmod:bismuth_ore"
+              ]
             },
             {
               "type": "minecraft:item",
+              "name": "tutorialmod:raw_bismuth",
               "functions": [
                 {
+                  "function": "minecraft:apply_bonus",
                   "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops",
-                  "function": "minecraft:apply_bonus"
+                  "formula": "minecraft:ore_drops"
                 },
                 {
                   "function": "minecraft:explosion_decay"
                 }
-              ],
-              "name": "tutorialmod:raw_bismuth"
+              ]
             }
           ]
         }
-      ],
-      "rolls": 1.0
+      ]
     }
   ],
-  "random_sequence": "tutorialmod:block/bismuth_ore"
+  "type": "minecraft:block"
 }

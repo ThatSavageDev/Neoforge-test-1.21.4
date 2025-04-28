@@ -1,8 +1,8 @@
 {
   "replace": false,
    "values": [
-     "tutorialmod: item/bismuth_block",
-     "tutorialmod: item/bismuth_ore",
-     "tutorialmod: item/bismuth_deepslate_ore"
+     "tutorialmod:bismuth_block",
+     "tutorialmod:bismuth_ore",
+     "tutorialmod:bismuth_deepslate_ore"
    ]
 }
