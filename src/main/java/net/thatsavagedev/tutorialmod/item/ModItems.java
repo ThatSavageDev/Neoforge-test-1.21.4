@@ -1,10 +1,12 @@
 package net.thatsavagedev.tutorialmod.item;
 
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.thatsavagedev.tutorialmod.TutorialMod;
+import net.thatsavagedev.tutorialmod.block.ModBlocks;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(TutorialMod.MOD_ID);

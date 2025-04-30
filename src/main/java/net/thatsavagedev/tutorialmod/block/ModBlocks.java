@@ -1,10 +1,12 @@
 package net.thatsavagedev.tutorialmod.block;
 
+import com.sun.jna.platform.unix.X11;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -29,9 +31,9 @@ public class ModBlocks {
             "nether_portal_decoblock",
             properties -> new Block(properties),
             BlockBehaviour.Properties.of()
-                    .strength(4f)
-                    .requiresCorrectToolForDrops()
-                    .sound(SoundType.AMETHYST));
+                    .strength(3f)
+                    .mapColor(MapColor.COLOR_PURPLE)
+                    .sound(SoundType.GLASS));
 
     public static final DeferredBlock<Block> BISMUTH_ORE = registerBlock(
             "bismuth_ore",

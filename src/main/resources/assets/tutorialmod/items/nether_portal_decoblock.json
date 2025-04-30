@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "tutorialmod:block/nether_portal_decoblock"
+  }
+}
