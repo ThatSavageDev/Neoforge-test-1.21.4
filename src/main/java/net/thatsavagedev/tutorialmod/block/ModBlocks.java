@@ -25,6 +25,14 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.AMETHYST));
 
+    public static final DeferredBlock<Block> NETHER_PORTAL_DECOBLOCK = registerBlock(
+            "nether_portal_decoblock",
+            properties -> new Block(properties),
+            BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.AMETHYST));
+
     public static final DeferredBlock<Block> BISMUTH_ORE = registerBlock(
             "bismuth_ore",
             properties -> new DropExperienceBlock(UniformInt.of(2,4), properties),
